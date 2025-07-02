@@ -3,57 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Justins Pulpakunnel Varkey | Portfolio</title>
+  <title>Justins Pulpakunnel Varkey</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <h1>Justins Pulpakunnel Varkey</h1>
-    <p>Data Science Enthusiast | Machine Learning | Computer Vision</p>
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="animated-text">Hi, I'm Justins Pulpakunnel Varkey</h1>
+      <p class="subtitle">Data Scientist | Deep Learning Enthusiast | Tech Explorer</p>
+      <a href="#about" class="btn">Know More</a>
+    </div>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m Justins Pulpakunnel Varkey, currently pursuing my Master’s in Data Science at FAU Erlangen-Nürnberg.
-      I’m passionate about Machine Learning, Deep Learning, Computer Vision, and exploring emerging areas like Quantum Computing.
-      I’ve worked on exciting projects including real-time emotion recognition, breast cancer detection using deep learning, 
-      and sentiment analysis. I enjoy transforming data into meaningful insights and impactful solutions.
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>Real-Time Multi-Facial Emotion Recognition</strong> —
-        Developed a deep learning model achieving 96.47% accuracy, integrating YOLOv5 and OpenCV for real-time video analysis.
-      </li>
-      <li>
-        <strong>Breast Cancer Detection on Screening Mammography</strong> —
-        Built an end-to-end CNN model using CBIS-DDSM and INbreast datasets to improve sensitivity and specificity in detecting malignant and benign regions.
-      </li>
-      <li>
-        <strong>Sentiment Analysis with SVM and LSTM</strong> —
-        Implemented sentiment classification on Twitter and Yelp datasets using SVM and LSTM architectures for multi-class sentiment detection.
-      </li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:justins.varkey@fau.de">justins.varkey@fau.de</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/justins-varkey" target="_blank">Justins Varkey</a></p>
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm passionate about data science, AI, and building innovative solutions. I love exploring complex problems and turning them into elegant solutions through code and analytics.
+      </p>
+      <p>
+        Let’s connect and create something impactful!
+      </p>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Justins Pulpakunnel Varkey</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/justins-pulpakunnel-varkey" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/JustinsVarkey" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/justins.varkey" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/4917679810332" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p class="footer-text">&copy; 2025 Justins Pulpakunnel Varkey</p>
   </footer>
+
+  <script>
+    // Optional: Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
 </body>
 </html>
